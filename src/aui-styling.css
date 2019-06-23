@@ -1,0 +1,70 @@
+.aui-header {
+  display: flex;
+  align-items: center;
+  max-height: calc(1.75rem + 12px);
+  padding: 6px;
+  background: var(--grey-d1);
+  color: white;
+  transform: translateY(0%);
+  transition: transform .3s ease-in-out;
+}
+
+.aui-editor {
+  position: fixed;
+  top: calc(1.75rem + 12px);
+  left: 0;
+  bottom: 0;
+  width: 33%;
+  background: var(--grey-d1);
+  padding: 12px;
+  border-top: 1px solid var(--grey-l1);
+  transform: translateY(0%);
+  transition: transform .3s ease-in-out;
+}
+
+.aui-editor__pane {
+  margin-bottom: 12px;
+}
+
+.aui-url-display {
+  margin-bottom: 12px;
+  padding: 3px;
+  color: white;
+  font-size: .75rem;
+  border: 1px solid var(--grey-l1);
+  border-radius: 3px;
+  overflow-x: auto;
+}
+
+
+.aui-live-pane {
+  height: calc(100vh - 1.75rem - 12px);
+  width: calc(100vw - 33%);
+  margin-left: 33%;
+  background-color: white;
+  transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out;
+}
+
+.aui-live-pane[theme="dark"] {
+  --brand-primary: #23c235;
+  --grey-l1: #303932;
+  background: darkgrey;
+}
+
+/* // adjust when open */
+.view-only .aui-header {
+  transform: translateY(-100%);
+}
+.view-only .aui-editor {
+  transform: translateX(-100%);
+}
+.view-only .aui-live-pane {
+  margin: calc(-1.75rem - 12px) 0 0 0;
+  width: calc(100vw);
+  height: calc(100vh);
+}
+
+.tmp-01,
+.tmp-02 {
+  padding: 24px;
+}
