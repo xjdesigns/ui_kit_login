@@ -90,6 +90,7 @@ class App extends Component {
                 <select onChange={ev => this.changeTemplate(ev.target.value)}>
                   <option value="01">Template 01</option>
                   <option value="02">Template 02</option>
+                  <option value="03">Template 03</option>
                 </select>
               </div>
             </form>

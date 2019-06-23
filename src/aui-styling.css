@@ -68,3 +68,26 @@
 .tmp-02 {
   padding: 24px;
 }
+
+.tmp-03 {
+  display: flex;
+  height: calc(100vh - 1.75rem - 12px);
+}
+
+.view-only .tmp-03 {
+  height: 100vh;
+}
+
+.tmp-03__lt,
+.tmp-03__rt {
+  padding: 24px;
+}
+
+.tmp-03__lt {
+  background-color: var(--grey-l1);
+}
+
+[theme="dark"] .tmp-03__lt {
+  --grey-d1: white;
+  color: var(--grey-d1);
+}
